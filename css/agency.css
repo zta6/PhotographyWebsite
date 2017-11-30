@@ -268,14 +268,10 @@ header .container{
 	padding-bottom: 10px;
 }
 #aboutText{
-	position: relative;
 	font-size: 26px;
+  text-indent: 30px;
 	margin-bottom: 10px;	
-	margin-top: -70px;
-}
-#aboutText > p{
-	margin-top: -70px;
-	font-size: 26px;
+	margin-top: 2%;
 }
   header{
     background-image: url('../img/Grid.jpg');
@@ -296,16 +292,6 @@ header .container{
     padding-top: 300px;
     padding-bottom: 200px;
   }
-  #aboutText{
-	position: relative;
-	font-size: 26px;
-	margin-bottom: 10px;	
-	margin-top: 150px;
-}
-  #aboutText > p{
-	margin-top: 10px;
-	font-size: 26px;
-	}
   header .container{
 	height: 800px;
   }	
@@ -416,18 +402,6 @@ section h3.section-subheading {
   z-index: 2;
 }
 
-#aboutHeading{
-  margin-top: 30%;
-  display: none;
-}
-#aboutHeading > h2{
-  font-size: 32px;
-}
-#aboutHeadingTwo{
-  display:inline-block;
-  margin-top: 40%;
-}
-
 
 #location{
   margin-top: 0px;
@@ -465,15 +439,6 @@ section h3.section-subheading {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
   }
-  #aboutHeadingTwo{
-    display: inline-block;
-    margin-top: 10%;
-  }
-  #aboutHeading{  
-    display:none; 
-  }
-
-
 }
 @media (min-width: 992px) {
 	.logoClass{
@@ -481,27 +446,9 @@ section h3.section-subheading {
 	width: 275px;
 	margin-top: -5px;
 	}
-  #aboutHeading{
-    display: none;
-  }
-  #aboutHeadingTwo{
-    display: inline-block;
-    margin-top: 20%;
-  }
-
-
 }
 
 @media (min-width: 1200px) {
-  #aboutHeading{
-    display: inline-block;
-  }
-  #aboutHeadingTwo{
-    display: none;
-  }
-  #aboutText{
-    margin-top: 2%;
-  }
   .navbar-brand > .logoClass{
 	padding-top: -10px;
 	padding-bottom: 10px;
@@ -542,21 +489,6 @@ section h3.section-subheading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
   }
-}
-@media(min-width: 1450px){
- #aboutText{
-    margin-top: 7%;
-  }
-}
-@media(min-width: 1600px){
- #aboutText{
-    margin-top: 15%;
-  } 
-}
-@media(min-width: 2400px){
- #aboutText{
-    margin-top: 26%;
-  } 
 }
 .team-member {
   text-align: center;
@@ -701,14 +633,7 @@ body {
 	width: 100px;
 }
 .portrait{
-	z-index: -1;
-	position:absolute;
-}
-.container-full > img{
-	width: 100%;
-}
-#aboutText{
-	text-indent: 30px;
+  width: 100%;
 }
 #popPhoto{
   height: 70px;
