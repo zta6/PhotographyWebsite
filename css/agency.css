@@ -243,8 +243,8 @@ header .intro-text {
 header .intro-text .intro-lead-in {
   font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: italic;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 35px;
+  line-height: 35px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
@@ -299,8 +299,8 @@ header .container{
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 40px;
-    line-height: 40px;	
+    font-size: 60px;
+    line-height: 60px;	
     margin-bottom: 25px;
   }
   header .intro-text .intro-heading {
@@ -312,9 +312,8 @@ header .container{
     margin-bottom: 50px;
   }
 }
-
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -331,7 +330,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 70px 0;
   }
 }
 .service-heading {
@@ -650,16 +649,13 @@ body {
   text-indent: 25px;
   margin-left: 25px;
   margin-right: 25px;
-  margin-bottom: 70px; 
+  margin-bottom: 20px; 
 }
 .section-subheading h3{
   font-size: 18px;
 }
 #biggerText{
   font-size: 18px;
-}
-#infoHeader{
-  margin-top: 80px;
 }
 #contactText{
   color: #fec503 !important;
