@@ -1,0 +1,98 @@
+
+html,
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.full-size-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#colOne
+{
+	height: 100%;
+	background-image: url("../img/AboutMe.jpg");
+	background-size: 105%;
+	background-repeat: no-repeat;
+	left: 0; 
+    filter: brightness(50%);
+    transition: opacity;
+    -webkit-filter: brightness(50%);
+}
+
+#colOne:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+#colOne > img{
+	position: absolute;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+    z-index:8;
+}
+
+#colOne > img.active {
+    z-index:10;
+}
+
+#colOne > img.last-active {
+    z-index:9;
+}
+
+#colTwo
+{
+	height: 100%;
+	background-image: url("../img/AboutMe.jpg");
+	background-size: 105%;
+	background-repeat: no-repeat;
+ 	filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+#colTwo > img{
+	position: absolute;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+
+#colThree
+{
+	height: 100%;
+	background-image: url("../img/AboutMe.jpg");
+	background-size: 105%;
+	background-repeat: no-repeat;
+ 	filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+#colThree:hover{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+#colTwo > img{
+	position: absolute;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+}
+
+.button{
+	margin-top: 120%;
+}
+
+.button > p{
+	border: 3px;
+	border-color: white;
+}
+
+
