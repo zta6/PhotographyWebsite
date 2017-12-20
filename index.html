@@ -20,6 +20,14 @@
     <!-- Core CSS file -->
     <link rel="stylesheet" href="gallery/photoswipe.css">
 
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -45,220 +53,84 @@
 
 <body>
    <div class = "full-size-div">
-        <div class = "col-lg-4 text-center" id = "colOne">
-            <img class = "active" src="img/AboutMe.jpg"/>
+        <div class = "col-lg-4" id = "colOne">
         
-            <img src="img/portfolio/Commercial/Commercial7.jpg"/>
+            <img class = "slide" src="img/portfolio/Senior/Senior1.jpg"/>
         
-            <img src="img/portfolio/Commercial/Commercial8.jpg"/>
+            <img class = "slide" src="img/portfolio/Senior/Senior18.jpg"/>
     
-            <img src="img/portfolio/Commercial/Commercial9.jpg"/>
+            <img class = "slide" src="img/portfolio/Senior/Senior16.jpg"/>
         
-            <img src="img/portfolio/Commercial/Commercial14.jpg"/>
+            <img class = "slide" src="img/portfolio/Senior/Senior5.jpg"/>
 
-            <div class = "button">
-                <p style = "color:white;">BUTTON</p>    
-            </div>
+                <a href = "nonCommercial/index.html" class = "homeButton">
+                    <span>HOME</span>
+                </a>
+
         </div>
         <div class = "col-lg-4" id = "colTwo">
+            <img src="img/LandingPage.jpg" class = "background"/>
+            <img src="Logo.png" class = "logo"/>
         </div>
         <div class = "col-lg-4" id = "colThree">
+        
+            <img class = "slide2" src="img/portfolio/Commercial/Commercial7.jpg"/>
+        
+            <img class = "slide2" src="img/portfolio/Commercial/Commercial8.jpg"/>
+    
+            <img class = "slide2" src="img/portfolio/Commercial/Commercial9.jpg"/>
+        
+            <img class = "slide2" src="img/portfolio/Commercial/Commercial14.jpg"/>
+
+         <a href = "index.html" class = "commercialButton">
+            <span>COMMERCIAL/EDITORIAL</span>
+        </a>
+
         </div>
     </div>        
 </body>
 
 <script>
-    function slideSwitch() {
-        var $active = $('#colOne IMG.active');
+    $(document).ready(function() {
+  
+      var slide= $('.slide');
+      var count = slide.length;
+      var i = 0;
 
-        if ( $active.length == 0 ) $active = $('#colOne IMG:last');
-
-        var $next =  $active.next().length ? $active.next()
-            : $('#colOne IMG:first');
-
-        $active.addClass('last-active');
-            
-        $next.css({opacity: 0.0})
-            .addClass('active')
-            .animate({opacity: 1.0}, 1000, function() {
-                $active.removeClass('active last-active');
-            });
-    }
-
-    $(function() {
-    setInterval( "slideSwitch()", 5000 );
+      slide.eq(0).addClass('active');
+      
+      var pause = setTimeout(transition,7000);
+      function transition(){
+          slide.eq(i).toggleClass('active');
+          if(++i>=count){
+            i=0;
+          }
+          slide.eq(i).toggleClass('active');
+          setTimeout(transition, 7000);
+      }
     });
 </script>
-<!--script for seniors photo gallery. All images at 1500x1000 @96ppi --> 
+
 <script>
-        var openPhotoSwipe = function() {
-            var pswpElement = document.querySelectorAll('.pswp')[0];
+    $(document).ready(function() {
+  
+      var slide= $('.slide2');
+      var count = slide.length;
+      var i = 0;
 
-        // build items array
-        var items = [
-            {                       //********add images here, add the image to the images folder, then add the path to the image to the source and set the height and width 
-                                    /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
-                                    // place commas between every element
-
-                src: 'img/portfolio/Senior/Hamburg-PA-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {              
-                src: 'img/portfolio/Senior/Hamburg-PA-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-PA-Soccer.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Guitar-Senior-Portrait.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Pianist-Senior-Portrait.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Conrad-Weiser-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Soccer.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Soccer2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Shoemakersville-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Shoemakersville-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Grings-Mill-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Grings-Mill-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Ballet-Dancer-Hamburg-PA.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball3.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Schuylkill-Valley-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Tulpehocken-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Horizons-Dance-Photographer.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Horizons-Dance-Photographer2.jpg',
-                w: 1000,
-                h: 1500
-            }, 
-            {               
-                src: 'img/portfolio/Senior/Reading-PA-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Fleetwood-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-             {               
-                src: 'img/portfolio/Senior/Oley-Valley-Senior-Portraits.jpg',
-                w: 1500,
-                h: 1000
-            },
-             {               
-                src: 'img/portfolio/Senior/Allentown-Senior-Portraits.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Goggle-Works-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Berks-County-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Berks-County-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Exeter-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-           
-        ];
-
-        // define options (if needed)
-        var options = {
-            // optionName: 'option value'
-            // for example:
-            index: 0,   // start at first slide
-            loop: true
-        };
-
-        // Initializes and opens PhotoSwipe
-        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    }
-        //document.getElementById('Seniors').onclick = openPhotoSwipe;
-
+      slide.eq(0).addClass('active');
+      
+      var pause = setTimeout(transition,7000);
+      function transition(){
+          slide.eq(i).toggleClass('active');
+          if(++i>=count){
+            i=0;
+          }
+          slide.eq(i).toggleClass('active');
+          setTimeout(transition, 7000);
+      }
+    });
 </script>
-
-
 
 <!-- Plugin JavaScript -->
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
