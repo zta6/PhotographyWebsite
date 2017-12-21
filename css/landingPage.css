@@ -24,9 +24,13 @@ body{
   filter: brightness(50%);
   -webkit-filter: brightness(50%);
 }
-#colOne > img:hover{
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
+#colOne:hover > img{
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+#colOne:hover a{
+  background-color: #4a4b4c;
+  border: 3px solid white;
 }
 
 #colOne > img{
@@ -34,6 +38,72 @@ body{
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+#colOne > a:link,
+#colOne > a:visited,
+#colOne > a:hover,
+#colOne > a:active{
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px 30px 15px 30px;
+  font-size: 32px;
+  position: relative;
+}
+
+#colOne > a:hover{
+  background-color: #fed136;
+  color: white;
+}
+
+#colTwo{
+  height: 100%;
+  left: 0;
+}
+
+#colThree
+{
+  height: 100%;
+  left: 0;
+  text-align: center;
+}
+
+#colThree > img{
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+#colThree:hover > img{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+#colThree > img{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#colThree > a:link,
+#colThree > a:visited,
+#colThree > a:hover,
+#colThree > a:active{
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 15px 30px 15px 30px;
+  font-size: 32px;
+}
+
+#colThree:hover a{
+  background-color: #4a4b4c;
+  border: 3px solid white;
+}
+
+#colThree > a:hover{
+  background-color: #4cb0ed;
+  color: white;
 }
 
 .slide
@@ -64,51 +134,13 @@ body{
 .homeButton
 {
   z-index: 99;
-  position: absolute;
+  position: relative;
+  top: 80vh;
 }
 .commercialButton{
   z-index: 99;
-  position: absolute; 
-  display: inline;
-}
-
-#colOne > a:link,
-#colOne > a:visited,
-#colOne > a:hover,
-#colOne > a:active{
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 70vh;
-  padding: 15px 30px 15px 30px;
-  background-color: black;
-  font-size: 32px;
-}
-#colOne > a:hover{
-  background-color: #fed136;
-  color: black;
-}
-
-#colThree > a:link,
-#colThree > a:visited,
-#colThree > a:hover,
-#colThree > a:active{
-  text-decoration: none;
-  color: white;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin-top: 70vh;
-  padding: 15px 30px 15px 30px;
-  background-color: black;
-  font-size: 32px;
-}
-#colThree > a:hover{
-  background-color: #4cb0ed;
-  color: black;
-}
-
-#colTwo{
-	height: 100%;
-  left: 0;
+  position: relative;
+  top: 80vh;
 }
 
 .background{
@@ -119,13 +151,13 @@ body{
   object-fit: cover;
   z-index: 0;
   filter: brightness(50%);
-    -webkit-filter: brightness(50%);
+  -webkit-filter: brightness(50%);
 }
 
 .logo{
   z-index: 99;
-  height: 100px;
-  width: 550px;
+  height: 8%;
+  width: 80%;
   margin-top: 45vh;
   margin-left: auto;
   margin-right: auto;
@@ -133,24 +165,3 @@ body{
   position: relative;
 }
 
-#colThree
-{
-	height: 100%;
-  left: 0;
-}
-
-#colThree > img{
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-}
-#colThree > img:hover{
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
-}
-
-#colThree > img{
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}

@@ -55,13 +55,17 @@
    <div class = "full-size-div">
         <div class = "col-lg-4" id = "colOne">
         
-            <img class = "slide" src="img/portfolio/Senior/Senior1.jpg"/>
-        
-            <img class = "slide" src="img/portfolio/Senior/Senior18.jpg"/>
+            <img class = "slide" src="landingSlideshow/NonCommercial/Senior19.jpg"/>
+
+            <img class = "slide" src="landingSlideshow/NonCommercial/Engagement17.jpg"/>
     
-            <img class = "slide" src="img/portfolio/Senior/Senior16.jpg"/>
+            <img class = "slide" src="landingSlideshow/NonCommercial/Senior22.jpg"/>
         
-            <img class = "slide" src="img/portfolio/Senior/Senior5.jpg"/>
+            <img class = "slide" src="landingSlideshow/NonCommercial/Senior26.jpg"/>
+
+            <img class = "slide" src="landingSlideshow/NonCommercial/Weddings2.jpg"/>
+
+            <img class = "slide" src="landingSlideshow/NonCommercial/Weddings18.jpg"/>
 
                 <a href = "nonCommercial/index.html" class = "homeButton">
                     <span>HOME</span>
@@ -74,13 +78,17 @@
         </div>
         <div class = "col-lg-4" id = "colThree">
         
-            <img class = "slide2" src="img/portfolio/Commercial/Commercial7.jpg"/>
+            <img class = "slide2" src="landingSlideshow/Commercial/Commercial1.jpg"/>
         
-            <img class = "slide2" src="img/portfolio/Commercial/Commercial8.jpg"/>
+            <img class = "slide2" src="landingSlideshow/Commercial/Commercial7.jpg"/>
     
-            <img class = "slide2" src="img/portfolio/Commercial/Commercial9.jpg"/>
+            <img class = "slide2" src="landingSlideshow/Commercial/Commercial8.jpg"/>
         
-            <img class = "slide2" src="img/portfolio/Commercial/Commercial14.jpg"/>
+            <img class = "slide2" src="landingSlideshow/Commercial/Commercial16.jpg"/>
+
+            <img class = "slide2" src="landingSlideshow/Commercial/Skier-Commercial-Photo.jpg"/>
+
+            <img class = "slide2" src="landingSlideshow/Commercial/PersonalProjects1.jpg"/>
 
          <a href = "index.html" class = "commercialButton">
             <span>COMMERCIAL/EDITORIAL</span>
@@ -120,7 +128,13 @@
 
       slide.eq(0).addClass('active');
       
-      var pause = setTimeout(transition,7000);
+      if(i === 0){
+        var pause = setTimeout(transition,10500);
+      }
+      else
+      {
+        var pause = setTimeout(transition,7000);
+      }
       function transition(){
           slide.eq(i).toggleClass('active');
           if(++i>=count){
@@ -129,7 +143,8 @@
           slide.eq(i).toggleClass('active');
           setTimeout(transition, 7000);
       }
-    });
+  
+});
 </script>
 
 <!-- Plugin JavaScript -->
