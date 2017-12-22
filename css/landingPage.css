@@ -1,9 +1,9 @@
 
 html,
 body{
-    overflow-x: hidden;
-    height: 100%;
-    background-color: black;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: black;
 }
 
 .full-size-div {
@@ -50,7 +50,7 @@ body{
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 1.5vh 1.5vw 1.5vh 1.5vw;
-  font-size: 3vh;
+  font-size: 4vw;
   position: relative;
 }
 
@@ -99,7 +99,7 @@ body{
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 1.5vh 1.5vw 1.5vh 1.5vw;
-  font-size: 2vh;
+  font-size: 4vw;
 }
 
 #colThree:hover a{
@@ -141,12 +141,12 @@ body{
 {
   z-index: 99;
   position: relative;
-  top: 25vh;
+  top: 24vh;
 }
 .commercialButton{
   z-index: 99;
   position: relative;
-  top: 80vh;
+  top: 24vh;
 }
 
 .background{  
@@ -162,8 +162,8 @@ body{
 
 .logo{
   z-index: 99;
-  height: 16vh;
-  width: 66vw;
+  height: 14vh;
+  width: 68vw;
   padding-top: 6vh;
   margin-left: auto;
   margin-right: auto;
@@ -173,13 +173,31 @@ body{
 
 @media (min-width: 768px) {
   .logo{
-    height: 13vh;
-    width: 28vw;
+    height: 11vh;
+    width: 30vw;
     margin-top: 35vh;
   }
 
+  #colThree > a:link,
+  #colThree > a:visited,
+  #colThree > a:hover,
+  #colThree > a:active{
+    font-size: 1.6vh;
+  }
+
+  #colOne > a:link,
+  #colOne > a:visited,
+  #colOne > a:hover,
+  #colOne > a:active{
+    font-size: 1.6vh;
+  }
+
   .homeButton{
-    top: 80vh;
+    top: 86vh;
+  }
+
+  .commercialButton{
+    top: 86vh;
   }
 
   #colOne{
@@ -200,4 +218,24 @@ body{
     float: left;
   }
 }
+
+@media (min-width: 992px) {
+  .logo{
+    height: 13vh;
+  }
+    #colThree > a:link,
+  #colThree > a:visited,
+  #colThree > a:hover,
+  #colThree > a:active{
+    font-size: 2vh;
+  }
+
+  #colOne > a:link,
+  #colOne > a:visited,
+  #colOne > a:hover,
+  #colOne > a:active{
+    font-size: 2vh;
+  }
+}
+
 
