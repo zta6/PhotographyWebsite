@@ -47,8 +47,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 15px 30px 15px 30px;
-  font-size: 32px;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  font-size: 2vh;
   position: relative;
 }
 
@@ -92,8 +92,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 15px 30px 15px 30px;
-  font-size: 32px;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  font-size: 2vh;
 }
 
 #colThree:hover a{
@@ -156,8 +156,8 @@ body{
 
 .logo{
   z-index: 99;
-  height: 8%;
-  width: 80%;
+  height: 10vh;
+  width: 30vw;
   margin-top: 45vh;
   margin-left: auto;
   margin-right: auto;

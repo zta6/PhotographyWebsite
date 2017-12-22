@@ -49,33 +49,42 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+    <!--Response.js, for switching images on different screen sizes-->
+    <script src="js/response.js"></script>
+
 </head>
 
-<body>
+<body data-responsejs='{"create": { "breakpoints": [0,320,481,641,961,1025,1281], "mode": "src", "prefix": "src" }}'>
+
    <div class = "full-size-div">
+
         <div class = "col-lg-4" id = "colOne">
         
-            <img class = "slide" src="landingSlideshow/NonCommercial/Senior19.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/families7.jpg" data-src1281 = "landingSlideshow/NonCommercial/Senior19.jpg"/>
 
-            <img class = "slide" src="landingSlideshow/NonCommercial/Engagement17.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/Senior3.jpg" data-src1281 = "landingSlideshow/NonCommercial/Engagement17.jpg"/>
     
-            <img class = "slide" src="landingSlideshow/NonCommercial/Senior22.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/Senior6.jpg" data-src1281 = "landingSlideshow/NonCommercial/Senior22.jpg"/>
         
-            <img class = "slide" src="landingSlideshow/NonCommercial/Senior26.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/Senior13.jpg" data-src1281 ="landingSlideshow/NonCommercial/Senior26.jpg"/>
 
-            <img class = "slide" src="landingSlideshow/NonCommercial/Weddings2.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/Weddings1.jpg" data-src1281 ="landingSlideshow/NonCommercial/Weddings2.jpg"/>
 
-            <img class = "slide" src="landingSlideshow/NonCommercial/Weddings18.jpg"/>
+            <img class = "slide" src = "landingSlideshow/NonCommercial/Weddings17.jpg" data-src1281 ="landingSlideshow/NonCommercial/Weddings18.jpg"/>
 
-                <a href = "nonCommercial/index.html" class = "homeButton">
-                    <span>HOME</span>
-                </a>
+            <a href = "nonCommercial/index.html" class = "homeButton">
+                <span>HOME</span>
+            </a>
 
         </div>
+
         <div class = "col-lg-4" id = "colTwo">
+
             <img src="img/LandingPage.jpg" class = "background"/>
             <img src="Logo.png" class = "logo"/>
+
         </div>
+
         <div class = "col-lg-4" id = "colThree">
         
             <img class = "slide2" src="landingSlideshow/Commercial/Commercial1.jpg"/>
@@ -90,11 +99,12 @@
 
             <img class = "slide2" src="landingSlideshow/Commercial/PersonalProjects1.jpg"/>
 
-         <a href = "index.html" class = "commercialButton">
-            <span>COMMERCIAL/EDITORIAL</span>
-        </a>
+            <a href = "index.html" class = "commercialButton">
+                <span>COMMERCIAL/EDITORIAL</span>
+            </a>
 
         </div>
+
     </div>        
 </body>
 
@@ -120,6 +130,7 @@
 </script>
 
 <script>
+    var firstRun = new Boolean("false");
     $(document).ready(function() {
   
       var slide= $('.slide2');
@@ -128,7 +139,7 @@
 
       slide.eq(0).addClass('active');
       
-      if(i === 0){
+      if(i == 0){
         var pause = setTimeout(transition,10500);
       }
       else
@@ -136,15 +147,20 @@
         var pause = setTimeout(transition,7000);
       }
       function transition(){
-          slide.eq(i).toggleClass('active');
-          if(++i>=count){
+        slide.eq(i).toggleClass('active');
+        
+        if(++i>=count)
+        {
             i=0;
-          }
-          slide.eq(i).toggleClass('active');
-          setTimeout(transition, 7000);
+        }
+
+        slide.eq(i).toggleClass('active');
+
+        setTimeout(transition,7000);
+        
       }
   
-});
+    });
 </script>
 
 <!-- Plugin JavaScript -->
