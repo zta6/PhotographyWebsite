@@ -15,7 +15,7 @@ body{
 #colOne
 {
   width: 100%;
-	height: 33vh;
+	height: 33%;
 	left: 0;
   text-align: center;
   display: block;
@@ -60,7 +60,7 @@ body{
 }
 
 #colTwo{
-  height: 34vh;
+  height: 34%;
   width: 100%;
   left: 0;
   float: none;
@@ -68,7 +68,7 @@ body{
 
 #colThree
 {
-  height: 33vh;
+  height: 33%;
   width: 100%;
   left: 0;
   text-align: center;
