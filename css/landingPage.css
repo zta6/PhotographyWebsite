@@ -22,7 +22,6 @@ body{
   float: none;
 }
 
-
 #colOne:hover > img{
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
@@ -156,7 +155,7 @@ body{
   position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 778px) {
 
   #colOne > a{
     border: none;
@@ -216,14 +215,16 @@ body{
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 1.6vh;
+    font-size: 1.3vh;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 1.6vh;
+    font-size: 1.3vh;
+    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
   }
 
   .homeButton{
@@ -259,18 +260,19 @@ body{
   .logo{
     height: 13vh;
   }
-    #colThree > a:link,
+
+  #colThree > a:link,
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 2vh;
+    font-size: 1.7vh;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 2vh;
+    font-size: 1.7vh;
   }
 
 }
