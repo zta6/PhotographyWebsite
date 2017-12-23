@@ -243,12 +243,6 @@ body{
     color: white;
   }
 
-  .logo{
-    height: 13vh;
-    width: 30vw;
-    margin-top: 35vh;
-  }
-
   #colThree:hover a{
     background-color: rgba(74, 75, 76, 0.85);
     border: 2px solid white;
@@ -307,6 +301,8 @@ body{
   
   .logo{
     height: 13vh;
+    width: 30vw;
+    margin-top: 35vh;
   }
 
   #colThree > a:link,
