@@ -205,16 +205,16 @@ body{
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 4.2vh;
-    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    font-size: 1.8vw;
+    padding: 1.7vw 1.5vw 1.7vw 1.5vw;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 4.2vh;
-    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
+    font-size: 1.8vw;
+    padding: 1.7vw 1.5vw 1.7vw 1.5vw;
   }
 
 }
@@ -257,7 +257,7 @@ body{
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 1.3vh;
+    font-size: 1.3vw;
     padding: 1.5vh 1.5vw 1.5vh 1.5vw;
   }
 
@@ -265,7 +265,7 @@ body{
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 1.3vh;
+    font-size: 1.3vw;
     padding: 1.2vh 1.5vw 1.2vh 1.5vw;
   }
 
@@ -295,13 +295,20 @@ body{
     float: left;
   }
 
+  .logo{
+    height: 12vh;
+    width: 30vw;
+    margin-top: 35vh;
+  }
+
+
 }
 
 @media (min-width: 992px) {
   
   .logo{
-    height: 13vh;
-    width: 30vw;
+    height: 15%;
+    width: 80%;
     margin-top: 35vh;
   }
 
@@ -309,14 +316,14 @@ body{
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 1.7vh;
+    font-size: 1.4vw;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 1.7vh;
+    font-size: 1.4vw;
   }
 
 }
