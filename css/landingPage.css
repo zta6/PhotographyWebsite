@@ -22,17 +22,16 @@ body{
   float: none;
 }
 
-#colOne > img{
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-}
+
 #colOne:hover > img{
   filter: brightness(100%);
   -webkit-filter: brightness(100%);
 }
-#colOne:hover a{
-  background-color: rgba(74, 75, 76, 0.85);
+
+#colOne > a{
   border: 3px solid white;
+  background-color: rgba(254, 209, 54, 0.85);
+  color: white;
 }
 
 #colOne > img{
@@ -54,11 +53,6 @@ body{
   position: relative;
 }
 
-#colOne > a:hover{
-  background-color: rgba(254, 209, 54, 0.85);
-  color: white;
-}
-
 #colTwo{
   height: 34%;
   width: 100%;
@@ -75,10 +69,6 @@ body{
   float: none;
 }
 
-#colThree > img{
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
-}
 #colThree:hover > img{
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
@@ -102,12 +92,8 @@ body{
   font-size: 4vw;
 }
 
-#colThree:hover a{
-  background-color: rgba(74, 75, 76, 0.85);
+#colThree > a{
   border: 3px solid white;
-}
-
-#colThree > a:hover{
   background-color: rgba(0, 143, 230, 0.85);
   color: white;
 }
@@ -143,6 +129,7 @@ body{
   position: relative;
   top: 23vh;
 }
+
 .commercialButton{
   z-index: 99;
   position: relative;
@@ -156,8 +143,6 @@ body{
 	height: 100%;
   object-fit: cover;
   z-index: 0;
-  filter: brightness(50%);
-  -webkit-filter: brightness(50%);
 }
 
 .logo{
@@ -172,10 +157,59 @@ body{
 }
 
 @media (min-width: 768px) {
+
+  #colOne > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
+  #colOne:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 3px solid white;
+  }
+
+  #colOne > a:hover{
+    background-color: rgba(254, 209, 54, 0.85);
+    color: white;
+  }
+
+  #colThree > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
   .logo{
     height: 11vh;
     width: 30vw;
     margin-top: 35vh;
+  }
+
+  #colThree:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 3px solid white;
+  }
+
+  #colThree > a:hover{
+    background-color: rgba(0, 143, 230, 0.85);
+    color: white;
+  }
+
+  #colOne > img{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
+  }
+
+
+  .background{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
+  }
+
+  #colThree > img{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
   }
 
   #colThree > a:link,
@@ -217,9 +251,11 @@ body{
     height: 100vh;
     float: left;
   }
+
 }
 
 @media (min-width: 992px) {
+  
   .logo{
     height: 13vh;
   }
@@ -236,6 +272,7 @@ body{
   #colOne > a:active{
     font-size: 2vh;
   }
+
 }
 
 
