@@ -47,8 +47,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 2vh 2vw 2vh 2vw;
-  font-size: 5vw;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  font-size: 4vw;
   position: relative;
 }
 
@@ -87,8 +87,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 2vh 2vw 2vh 2vw;
-  font-size: 5vw;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  font-size: 4vw;
 }
 
 #colThree > a{
@@ -155,7 +155,71 @@ body{
   position: relative;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 480px){
+  #colOne{
+    width: 33%;
+    height: 100vh;
+    float: left;
+  }
+
+  #colTwo{
+    width: 34%;
+    height: 100vh;
+    float: left;
+  }
+
+  #colThree{
+    width: 33%;
+    height: 100vh;
+    float: left;
+  }
+  .homeButton{
+    top: 86vh;
+  }
+
+  .commercialButton{
+    top: 86vh;
+  }
+
+  #colOne a{
+    border: 2px solid white;
+  }
+
+  #colThree a{
+    border: 2px solid white;
+  }
+
+  #colTwo {
+     padding-left: 1vw;
+     padding-right: 1vw;
+  }
+
+  .logo{
+    height: 17vh;
+    width: 32vw;
+    margin-top: 35vh;
+    left: 0;
+  }
+
+  #colThree > a:link,
+  #colThree > a:visited,
+  #colThree > a:hover,
+  #colThree > a:active{
+    font-size: 4.2vh;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  }
+
+  #colOne > a:link,
+  #colOne > a:visited,
+  #colOne > a:hover,
+  #colOne > a:active{
+    font-size: 4.2vh;
+    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
+  }
+
+}
+
+@media (min-width: 768px) {
 
   #colOne > a{
     border: none;
@@ -235,25 +299,6 @@ body{
     width: 33%;
     height: 100vh;
     float: left;
-  }
-
-}
-
-@media (min-width: 768px) {
-
-  #colOne > img{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
-  }
-
-  .background{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
-  }
-
-  #colThree > img{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
   }
 
 }
