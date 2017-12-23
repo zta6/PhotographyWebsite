@@ -47,8 +47,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
-  font-size: 4vw;
+  padding: 2vh 2vw 2vh 2vw;
+  font-size: 5vw;
   position: relative;
 }
 
@@ -87,8 +87,8 @@ body{
   text-decoration: none;
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
-  font-size: 4vw;
+  padding: 2vh 2vw 2vh 2vw;
+  font-size: 5vw;
 }
 
 #colThree > a{
@@ -180,7 +180,7 @@ body{
   }
 
   .logo{
-    height: 15vh;
+    height: 13vh;
     width: 30vw;
     margin-top: 35vh;
   }
@@ -199,16 +199,16 @@ body{
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 1.8vh;
-    padding: 2vh 2vw 2vh 2vw;
+    font-size: 1.3vh;
+    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 1.8vh;
-    padding: 2vh 2vw 2vh 2vw;
+    font-size: 1.3vh;
+    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
   }
 
   .homeButton{
