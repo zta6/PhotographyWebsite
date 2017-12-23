@@ -155,7 +155,7 @@ body{
   position: relative;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 480px) {
 
   #colOne > a{
     border: none;
@@ -165,7 +165,7 @@ body{
 
   #colOne:hover a{
     background-color: rgba(74, 75, 76, 0.85);
-    border: 3px solid white;
+    border: 2px solid white;
   }
 
   #colOne > a:hover{
@@ -180,14 +180,14 @@ body{
   }
 
   .logo{
-    height: 11vh;
+    height: 13vh;
     width: 30vw;
     margin-top: 35vh;
   }
 
   #colThree:hover a{
     background-color: rgba(74, 75, 76, 0.85);
-    border: 3px solid white;
+    border: 2px solid white;
   }
 
   #colThree > a:hover{
@@ -195,36 +195,20 @@ body{
     color: white;
   }
 
-  #colOne > img{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
-  }
-
-
-  .background{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
-  }
-
-  #colThree > img{
-    filter: brightness(50%);
-    webkit-filter: brightness(50%);
-  }
-
   #colThree > a:link,
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
-    font-size: 1.3vh;
-    padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+    font-size: 1.5vh;
+    padding: 1.8vh 1.8vw 1.8vh 1.8vw;
   }
 
   #colOne > a:link,
   #colOne > a:visited,
   #colOne > a:hover,
   #colOne > a:active{
-    font-size: 1.3vh;
-    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
+    font-size: 1.5vh;
+    padding: 1.8vh 1.8vw 1.8vh 1.8vw;
   }
 
   .homeButton{
@@ -251,6 +235,25 @@ body{
     width: 33%;
     height: 100vh;
     float: left;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  #colOne > img{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
+  }
+
+  .background{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
+  }
+
+  #colThree > img{
+    filter: brightness(50%);
+    webkit-filter: brightness(50%);
   }
 
 }
