@@ -97,7 +97,7 @@
 
             <img class = "slide2" src="landingSlideshow/Commercial/Commercial12.jpg" data-src481 = "landingSlideshow/Commercial/Skier-Commercial-Photo.jpg"/>
 
-            <img class = "slide2" src="landingSlideshow/Commercial/CommercialFitnessPhoto.jpg" data-src768 = "landingSlideshow/Commercial/PersonalProjects1.jpg"/>
+            <img class = "slide2" src="landingSlideshow/Commercial/CommercialFitnessPhoto.jpg" data-src481 = "landingSlideshow/Commercial/PersonalProjects1.jpg"/>
 
             <a href = "commercial/index.html" class = "commercialButton">
                 <span>COMMERCIAL/EDITORIAL</span>
@@ -118,14 +118,14 @@
 
       slide.eq(0).addClass('active');
       
-      var pause = setTimeout(transition,7000);
+      var pause = setTimeout(transition,5000);
       function transition(){
           slide.eq(i).toggleClass('active');
           if(++i>=count){
             i=0;
           }
           slide.eq(i).toggleClass('active');
-          setTimeout(transition, 7000);
+          setTimeout(transition, 5000);
       }
     });
 </script>
@@ -142,11 +142,11 @@
       slide.eq(0).addClass('active');
       
       if(i == 0){
-        var pause = setTimeout(transition,10500);
+        var pause = setTimeout(transition,7500);
       }
       else
-      {
-        var pause = setTimeout(transition,7000);
+      { 
+        var pause = setTimeout(transition,5000);
       }
       function transition(){
         slide.eq(i).toggleClass('active');
@@ -158,7 +158,7 @@
 
         slide.eq(i).toggleClass('active');
 
-        setTimeout(transition,7000);
+        setTimeout(transition,5000);
         
       }
   
