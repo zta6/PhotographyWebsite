@@ -112,63 +112,6 @@
     </div>        
 </body>
 
-<!--Slideshow script for non commercial images (first column)-->
-<script>
-    $(document).ready(function() {
-  
-      var slide= $('.slide');
-      var count = slide.length;
-      var i = 0;
-
-      slide.eq(0).addClass('active');
-      
-      var pause = setTimeout(transition,5000);
-      function transition(){
-          slide.eq(i).toggleClass('active');
-          if(++i>=count){
-            i=0;
-          }
-          slide.eq(i).toggleClass('active');
-          setTimeout(transition, 5000);
-      }
-    });
-</script>
-
-<!--Slideshow script for commercial images (third column)-->
-<script>
-    var firstRun = new Boolean("false");
-    $(document).ready(function() {
-  
-      var slide= $('.slide2');
-      var count = slide.length;
-      var i = 0;
-
-      slide.eq(0).addClass('active');
-      
-      if(i == 0){
-        var pause = setTimeout(transition,7500);
-      }
-      else
-      { 
-        var pause = setTimeout(transition,5000);
-      }
-      function transition(){
-        slide.eq(i).toggleClass('active');
-        
-        if(++i>=count)
-        {
-            i=0;
-        }
-
-        slide.eq(i).toggleClass('active');
-
-        setTimeout(transition,5000);
-        
-      }
-  
-    });
-</script>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

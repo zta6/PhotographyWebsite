@@ -27,6 +27,16 @@ body{
   -webkit-filter: brightness(100%);
 }
 
+#colTwo:hover > img{
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+}
+
+#colThree:hover > img{
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
 #colOne > a{
   border: 3px solid white;
   background-color: rgba(254, 209, 54, 0.85);
@@ -52,10 +62,29 @@ body{
   position: relative;
 }
 
+#colTwo > a:link,
+#colTwo > a:visited,
+#colTwo > a:hover,
+#colTwo > a:active{
+  text-decoration: none;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  font-size: 4vw;
+  position: relative;
+}
+
+#colTwo > a{
+  border: 3px solid white;
+  background-color: rgba(140, 255, 102, 0.85);
+  color: white;
+}
+
 #colTwo{
   height: 34%;
   width: 100%;
   left: 0;
+  text-align: center;
   float: none;
 }
 
@@ -66,11 +95,6 @@ body{
   left: 0;
   text-align: center;
   float: none;
-}
-
-#colThree:hover > img{
-    filter: brightness(100%);
-    -webkit-filter: brightness(100%);
 }
 
 #colThree > img{
@@ -122,17 +146,18 @@ body{
   z-index:98;
 }
 
-.homeButton
+.button
 {
   z-index: 99;
   position: relative;
   top: 23vh;
 }
 
-.commercialButton{
+.blogButton
+{
   z-index: 99;
   position: relative;
-  top: 23vh;
+  top: 34vh;
 }
 
 .background{  
@@ -173,12 +198,16 @@ body{
     height: 100vh;
     float: left;
   }
-  .homeButton{
+
+  .button{
     top: 86vh;
   }
 
-  .commercialButton{
-    top: 86vh;
+  .blogButton
+  {
+    z-index: 99;
+    position: relative;
+    top: 34vh;
   }
 
   #colOne a{
@@ -186,6 +215,10 @@ body{
   }
 
   #colThree a{
+    border: 2px solid white;
+  }
+
+  #colTwo a{
     border: 2px solid white;
   }
 
@@ -217,9 +250,32 @@ body{
     padding: 1.7vw 1.5vw 1.7vw 1.5vw;
   }
 
+  #colTwo > a:link,
+  #colTwo > a:visited,
+  #colTwo > a:hover,
+  #colTwo > a:active{
+    font-size: 1.8vw;
+    padding: 1.7vw 1.5vw 1.7vw 1.5vw;
+  }
+
 }
 
 @media (min-width: 768px) {
+
+  #colOne > img{
+      filter: brightness(50%);
+      -webkit-filter: brightness(50%);
+  }
+
+  #colTwo > img{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+  }
+
+  #colThree > img{
+      filter: brightness(50%);
+      -webkit-filter: brightness(50%);
+  }
 
   #colOne > a{
     border: none;
@@ -253,6 +309,22 @@ body{
     color: white;
   }
 
+  #colTwo > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
+  #colTwo:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 2px solid white;
+  }
+
+  #colTwo > a:hover{
+    background-color: rgba(0, 128, 0, 0.85);
+    color: white;
+  }
+
   #colThree > a:link,
   #colThree > a:visited,
   #colThree > a:hover,
@@ -269,12 +341,12 @@ body{
     padding: 1.2vh 1.5vw 1.2vh 1.5vw;
   }
 
-  .homeButton{
-    top: 86vh;
-  }
-
-  .commercialButton{
-    top: 86vh;
+  #colTwo > a:link,
+  #colTwo > a:visited,
+  #colTwo > a:hover,
+  #colTwo > a:active{
+    font-size: 1.3vw;
+    padding: 1.2vh 1.5vw 1.2vh 1.5vw;
   }
 
   #colOne{
@@ -295,12 +367,18 @@ body{
     float: left;
   }
 
+  .blogButton
+  {
+    z-index: 99;
+    position: relative;
+    top: 39vh;
+  }
+
   .logo{
     height: 12vh;
     width: 30vw;
     margin-top: 35vh;
   }
-
 
 }
 
@@ -312,10 +390,24 @@ body{
     margin-top: 35vh;
   }
 
+   .blogButton
+  {
+    z-index: 99;
+    position: relative;
+    top: 36vh;
+  }
+
   #colThree > a:link,
   #colThree > a:visited,
   #colThree > a:hover,
   #colThree > a:active{
+    font-size: 1.4vw;
+  }
+
+  #colTwo > a:link,
+  #colTwo > a:visited,
+  #colTwo > a:hover,
+  #colTwo > a:active{
     font-size: 1.4vw;
   }
 

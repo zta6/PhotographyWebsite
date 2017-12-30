@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/gallery.css" rel="stylesheet">
+
+    <!-- Masonry Layout JavaScript -->
+    <script src="js/masonry.js"></script>
+
+</head>
+
+
+<body id="page-top" class="index">
+
+	<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+	  	<div class="grid-sizer"><img src = "img/portfolio/commercial/Commercial14.jpg"/></div>
+	  	<div class="grid-item"><img src = "img/portfolio/commercial/Commercial15.jpg"/></div>
+	  	<div class="grid-item"><img src = "img/portfolio/commercial/Commercial16.jpg"/></div>
+	  	<div class="grid-item"><img src = "img/portfolio/commercial/Commercial14.jpg"/></div>
+	  	<div class="grid-item"><img src = "img/portfolio/commercial/Commercial15.jpg"/></div>
+	  	<div class="grid-item"><img src = "img/portfolio/commercial/Commercial16.jpg"/></div>
+	</div>
+
+<script>
+
+	$('.grid').masonry({
+	// set itemSelector so .grid-sizer is not used in layout
+	itemSelector: '.grid-item',
+	// use element for option
+	columnWidth: '.grid-sizer',
+	percentPosition: true
+	})
+
+</script>
+
+</body>     
+
+</html>
+

@@ -90,10 +90,10 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">About</a>
@@ -106,9 +106,6 @@
                     </li>
                     <li>
                         <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="../nonCommercial/index.html">Home</a>
                     </li>
                 </ul>
             </div>
@@ -132,7 +129,6 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Portrait</h4>
-              
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
@@ -151,7 +147,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Seniors" class="portfolio-link" >
+                    <a id = "Seniors" class="portfolio-link" href = "productGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -443,176 +439,6 @@
     </div>
 
 </div>
-
-
-<!--script for seniors photo gallery. All images at 1500x1000 @96ppi --> 
-<script>
-        var openPhotoSwipe = function() {
-            var pswpElement = document.querySelectorAll('.pswp')[0];
-
-        // build items array
-        var items = [
-            {                       //********add images here, add the image to the images folder, then add the path to the image to the source and set the height and width 
-                                    /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
-                                    // place commas between every element
-
-                src: 'img/portfolio/Senior/Hamburg-PA-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {              
-                src: 'img/portfolio/Senior/Hamburg-PA-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-PA-Soccer.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Guitar-Senior-Portrait.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Pianist-Senior-Portrait.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Conrad-Weiser-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Soccer.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Soccer2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Shoemakersville-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Shoemakersville-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Grings-Mill-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Grings-Mill-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Ballet-Dancer-Hamburg-PA.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Hamburg-Hawks-Baseball3.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Schuylkill-Valley-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Tulpehocken-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Horizons-Dance-Photographer.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Horizons-Dance-Photographer2.jpg',
-                w: 1000,
-                h: 1500
-            }, 
-            {               
-                src: 'img/portfolio/Senior/Reading-PA-Senior-Pictures.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Senior/Fleetwood-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-             {               
-                src: 'img/portfolio/Senior/Oley-Valley-Senior-Portraits.jpg',
-                w: 1500,
-                h: 1000
-            },
-             {               
-                src: 'img/portfolio/Senior/Allentown-Senior-Portraits.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Goggle-Works-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Berks-County-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Berks-County-Senior-Pictures2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Senior/Exeter-Senior-Pictures.jpg',
-                w: 1000,
-                h: 1500
-            },
-           
-        ];
-
-        // define options (if needed)
-        var options = {
-            // optionName: 'option value'
-            // for example:
-            index: 0,   // start at first slide
-            loop: true
-        };
-
-        // Initializes and opens PhotoSwipe
-        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    }
-        document.getElementById('Seniors').onclick = openPhotoSwipe;
-
-</script>
 
 <!--script for engagement/couples gallery-->
 <script>

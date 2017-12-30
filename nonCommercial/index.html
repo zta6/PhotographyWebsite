@@ -64,6 +64,9 @@
     <!-- UI JS file -->
     <script src="gallery/photoswipe-ui-default.min.js"></script> 
 
+    <!--Macy.js, for masonry layout-->
+    <script src="js/macy.js"></script>
+
 
 </head>
 
@@ -90,6 +93,9 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
@@ -106,9 +112,6 @@
                     </li>
                     <li>
                         <a href="">Blog</a>
-                    </li>
-                    <li>
-                        <a href="../Commercial/index.html">Commercial</a>
                     </li>
                 </ul>
             </div>
@@ -139,7 +142,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Weddings" class="portfolio-link">
+                    <a id = "Weddings"  href = "../gallery1.html" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -196,16 +199,16 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Commercial" class="portfolio-link">
+                    <a id = "Pets" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/Commercial.jpg" class="img-responsive" alt="Commercial photography portfolio">
+                        <img src="img/portfolio/Pets.jpg" class="img-responsive" alt="Pet photography portfolio">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Commercial/Editorial</h4>
+                        <h4>Pets</h4>
               
                     </div>
                 </div>
@@ -263,21 +266,21 @@
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <img class = "serviceIcons" src = "img/Family.png" alt="family portraits"/>
+                        <img class = "serviceIcons" src = "img/Family.png" alt="Family portraits"/>
                     </span>
                     <h4 class="service-heading">Families</h4>
                     <p class="text-muted">Look good with the people you only sorta like.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                       <img class = "serviceIcons"  src = "img/Commercial.png" alt="commercial photography"/>
+                       <img class = "serviceIcons"  src = "img/Pets.png" alt="Pet photography"/>
                     </span>
-                    <h4 class="service-heading">Commercial</h4>
-                    <p class="text-muted">Show your clients how incredible your business is.</p>
+                    <h4 class="service-heading">Pets</h4>
+                    <p class="text-muted">They're family too.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                       <img class = "serviceIcons"  src = "img/Headshot.png" alt="headshot photography"/>
+                       <img class = "serviceIcons"  src = "img/Headshot.png" alt="Headshot photography"/>
                     </span>
                     <h4 class="service-heading">Headshots</h4>
                     <p class="text-muted">BOOM. Headshot - From LinkedIn to Tinder.</p>
@@ -1201,7 +1204,7 @@
 </script>
 
 
-<!--script for commercial gallery-->
+<!--script for Pets gallery-->
 <script>
         var openPhotoSwipe = function() {
             var pswpElement = document.querySelectorAll('.pswp')[0];
@@ -1212,81 +1215,35 @@
                                     /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
                                     // place commas between every element
                                     
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial1.jpg',
-                w: 1000,
-                h: 1500
+                src: 'img/portfolio/Pets/Boxer-Photography.jpg',
+                w: 1500,
+                h: 1000
             },
              {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial3.jpg',
+                src: 'img/portfolio/Pets/Bucks-County-Pet-Photography.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial1.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial3.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial4.jpg',
+                src: 'img/portfolio/Pets/Bucks-County-Pet-Photography2.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial4.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial5.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Editorial6.jpg',
+                src: 'img/portfolio/Pets/Reading-PA-Pet-Photography.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial5.jpg',
+                src: 'img/portfolio/Pets/Reading-PA-Pet-Photography2.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial6.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial7.jpg',
+                src: 'img/portfolio/Pets/Bucks-County-Pet-Photography3.jpg',
                 w: 1000,
                 h: 1500
             },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial8.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Commercial/Brandon-Adam-Photography-Commercial9.jpg',
-                w: 1500,
-                h: 1000
-            },
-            
         ];
 
         // define options (if needed)
@@ -1301,9 +1258,10 @@
         var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     }
-        document.getElementById('Commercial').onclick = openPhotoSwipe;
+        document.getElementById('Pets').onclick = openPhotoSwipe;
 
 </script>
+
 <!--script for personal projects gallery-->
 <script>
         var openPhotoSwipe = function() {
