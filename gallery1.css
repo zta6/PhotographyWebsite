@@ -216,8 +216,8 @@ a:not(.btn):hover, a:not(.btn):active, a:not(.btn):focus {
 }
 
 .container {
-    width: 80%;
-    padding: 0 24px;
+    width: 95%;
+    padding: 0px;
     margin: 0 auto
 }
 
