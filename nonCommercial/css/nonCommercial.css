@@ -204,38 +204,6 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fec503;
 }
 
-@media (min-width: 768px) {
-    #quote-carousel {
-        margin-bottom: 0;
-        padding: 0 40px 30px 40px;
-    }
-    .navbar-default {
-        background-color: transparent;
-        padding: 25px 0;
-        -webkit-transition: padding 0.3s;
-        -moz-transition: padding 0.3s;
-        transition: padding 0.3s;
-        border: none;
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-    .navbar-default .navbar-nav > .active > a {
-        border-radius: 3px;
-    }
-    .navbar-default.navbar-shrink {
-        background-color: #222222;
-        padding: 10px 0;
-    }
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
-}
-
 header .intro-text {
     padding-top: 100px;
     padding-bottom: 50px;
@@ -252,9 +220,9 @@ header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 50px;
-    margin-top: 145px;
+    margin-top: 5vh;
 }
 header .container{
     height: 600px;
@@ -314,51 +282,6 @@ header{
     margin-top: 2%;
 }
 
-@media (min-width: 768px) {
-
-    .aboutImage{
-        background-image: url('../img/AboutMe.jpg');
-        background-size: 100% 100%;
-        background-repeat: no-repeat; 
-        height: 600px;
-        width: 400px;
-        float: left;
-    }
-    #aboutMain{
-        width: 40%;
-        float:right;
-    }
-    #aboutMain > .text-muted{
-        font-size: 18px;
-        text-indent: 20px;
-        margin-bottom: 10px;
-        margin-left: 0px;  
-        margin-top: 2%;
-    }
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
-    }
-    header .container{
-        height: 800px;
-    }	
-    header .intro-text .intro-lead-in {
-        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-style: italic;
-        font-size: 60px;
-        line-height: 60px;	
-        margin-bottom: 25px;
-    }
-    header .intro-text .intro-heading {
-        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 75px;
-        line-height: 75px;
-        margin-top: 0px;
-    }
-}
-
 section {
     padding: 50px 0;
 }
@@ -374,11 +297,6 @@ section h3.section-subheading {
     font-style: italic;
     font-weight: 400;
     margin-bottom: 75px;
-}
-@media (min-width: 768px) {
-    section {
-        padding: 70px 0;
-    }
 }
 .service-heading {
     margin: 15px 0;
@@ -482,7 +400,7 @@ section h3.section-subheading {
     padding-left: 20%;
 }
 
-@media (min-width: 500px){
+@media (min-width: 480px){
     #location{
         margin-top: 0px;
         margin-bottom: 0px;
@@ -491,10 +409,108 @@ section h3.section-subheading {
         padding-right: 20%;
         padding-left: 20%;
     } 
+
+    header .intro-text .intro-heading {
+        margin-top: 13vw;
+    }
 }
 
 @media (min-width: 768px) {
+    
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+    .navbar-default {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+    }
 
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .navbar-default .navbar-nav > .active > a {
+        border-radius: 3px;
+    }
+    .navbar-default.navbar-shrink {
+        background-color: #222222;
+        padding: 10px 0;
+    }
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+        /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+
+    #quote-carousel .carousel-indicators {
+        bottom: 0px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 10px;
+        height: 10px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 12px;
+        height: 12px;
+    }
+    #quote-carousel{
+        margin-bottom: 50px;
+    }
+
+    .aboutImage{
+        background-image: url('../img/AboutMe.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat; 
+        height: 600px;
+        width: 400px;
+        float: left;
+    }
+    #aboutMain{
+        width: 40%;
+        float:right;
+    }
+    #aboutMain > .text-muted{
+        font-size: 18px;
+        text-indent: 20px;
+        margin-bottom: 10px;
+        margin-left: 0px;  
+        margin-top: 2%;
+    }
+    header .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+    header .container{
+        height: 800px;
+    }   
+    header .intro-text .intro-lead-in {
+        font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-style: italic;
+        font-size: 60px;
+        line-height: 60px;  
+        margin-bottom: 25px;
+    }
+    header .intro-text .intro-heading {
+        font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 75px;
+        margin-top: -10px;
+    }
+
+    section {
+        padding: 70px 0;
+    }
     .logoClass{
         height: 35px;
         width: 140px;
@@ -549,6 +565,10 @@ section h3.section-subheading {
         font-size: 14px;
     }
 
+    header .intro-text .intro-heading {
+        margin-top: 0vh;
+    }
+
     .aboutImage{
         background-image: url('../img/AboutMe.jpg');    
         background-size: 100% 100%;
@@ -601,6 +621,10 @@ section h3.section-subheading {
         height: 45px;
         width: 275px;
         margin-top: -5px;
+    }
+
+    header .intro-text .intro-heading {
+        margin-top: 0vh;
     }
 
     #theKnot{
@@ -894,37 +918,6 @@ body {
     margin-right:5%;
     margin-left: 5%;
 }
-
-/**
-  MEDIA QUERIES
-*/
-
-
-/* Small devices (tablets, up to 768px) */
-@media (max-width: 768px) { 
-
-    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
-
-    #quote-carousel .carousel-indicators {
-        bottom: 0px !important;  
-    }
-    #quote-carousel .carousel-indicators li {
-        display: inline-block;
-        margin: 0px 5px;
-        width: 10px;
-        height: 10px;
-    }
-    #quote-carousel .carousel-indicators li.active {
-        margin: 0px 5px;
-        width: 12px;
-        height: 12px;
-    }
-    #quote-carousel{
-        margin-bottom: 50px;
-    }
-
-}
-
 
 #quote-carousel{
     margin-bottom: 40px;
