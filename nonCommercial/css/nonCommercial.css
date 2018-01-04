@@ -220,8 +220,8 @@ header .intro-text .intro-heading {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 36px;
+    font-size: 34px;
+    line-height: 38px;
     margin-top: 5vh;
 }
 header .container{
@@ -504,7 +504,7 @@ section h3.section-subheading {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 50px;
-        line-height: 75px;
+        line-height: 60px;
         margin-top: -10px;
     }
 
