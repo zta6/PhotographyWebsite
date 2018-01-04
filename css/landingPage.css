@@ -262,69 +262,6 @@ body{
 
 @media (min-width: 768px) {
 
-  #colOne > img{
-      filter: brightness(50%);
-      -webkit-filter: brightness(50%);
-  }
-
-  #colTwo > img{
-    filter: brightness(50%);
-    -webkit-filter: brightness(50%);
-  }
-
-  #colThree > img{
-      filter: brightness(50%);
-      -webkit-filter: brightness(50%);
-  }
-
-  #colOne > a{
-    border: none;
-    background-color: rgba(0,0,0,0);
-    color: white;
-  }
-
-  #colOne:hover a{
-    background-color: rgba(74, 75, 76, 0.85);
-    border: 2px solid white;
-  }
-
-  #colOne > a:hover{
-    background-color: rgba(254, 209, 54, 0.85);
-    color: white;
-  }
-
-  #colThree > a{
-    border: none;
-    background-color: rgba(0,0,0,0);
-    color: white;
-  }
-
-  #colThree:hover a{
-    background-color: rgba(74, 75, 76, 0.85);
-    border: 2px solid white;
-  }
-
-  #colThree > a:hover{
-    background-color: rgba(0, 143, 230, 0.85);
-    color: white;
-  }
-
-  #colTwo > a{
-    border: none;
-    background-color: rgba(0,0,0,0);
-    color: white;
-  }
-
-  #colTwo:hover a{
-    background-color: rgba(74, 75, 76, 0.85);
-    border: 2px solid white;
-  }
-
-  #colTwo > a:hover{
-    background-color: rgba(0, 128, 0, 0.85);
-    color: white;
-  }
-
   #colThree > a:link,
   #colThree > a:visited,
   #colThree > a:hover,
@@ -395,6 +332,69 @@ body{
     z-index: 99;
     position: relative;
     top: 36vh;
+  }
+
+   #colOne > img{
+      filter: brightness(50%);
+      -webkit-filter: brightness(50%);
+  }
+
+  #colTwo > img{
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+  }
+
+  #colThree > img{
+      filter: brightness(50%);
+      -webkit-filter: brightness(50%);
+  }
+
+  #colOne > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
+  #colOne:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 2px solid white;
+  }
+
+  #colOne > a:hover{
+    background-color: rgba(254, 209, 54, 0.85);
+    color: white;
+  }
+
+  #colThree > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
+  #colThree:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 2px solid white;
+  }
+
+  #colThree > a:hover{
+    background-color: rgba(0, 143, 230, 0.85);
+    color: white;
+  }
+
+  #colTwo > a{
+    border: none;
+    background-color: rgba(0,0,0,0);
+    color: white;
+  }
+
+  #colTwo:hover a{
+    background-color: rgba(74, 75, 76, 0.85);
+    border: 2px solid white;
+  }
+
+  #colTwo > a:hover{
+    background-color: rgba(0, 128, 0, 0.85);
+    color: white;
   }
 
   #colThree > a:link,
