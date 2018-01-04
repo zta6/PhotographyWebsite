@@ -87,104 +87,21 @@
       <div class="container">
           <div id = "macy-container">
 
+             <!--NOTE: make sure that when you add images here you use the proper number in the 'openPhotoswipe' call. 
+            The first image in the gallery should be openPhotoswipe(0). If there are 25 images in the gallery the last
+            image in the gallery should be 'openPhotoswipe(24)' (24 NOT 25)
+            You'll also need to add the images to the photoswipe gallery down at about line 210. Those images should be in the same order as these images-->
+
               <div class="demo" onclick = "openPhotoSwipe(0)">
-                <img src ='../img/portfolio/Weddings/Weddings1.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Beauty-Product-Photography.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(1)">
-                <img src ='../img/portfolio/Weddings/Weddings2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Whiskey-Product-Photography.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(2)">
-                <img src ='../img/portfolio/Weddings/Weddings3.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(3)">
-                <img src ='../img/portfolio/Weddings/Weddings4.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(4)">
-                <img src ='../img/portfolio/Weddings/Weddings5.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(5)">
-                <img src ='../img/portfolio/Weddings/Weddings6.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(6)">
-                <img src ='../img/portfolio/Weddings/Weddings7.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(7)">
-                <img src ='../img/portfolio/Weddings/Weddings8.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(8)">
-                <img src ='../img/portfolio/Weddings/Weddings9.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(9)">
-                <img src ='../img/portfolio/Weddings/Weddings10.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(10)">
-                <img src ='../img/portfolio/Weddings/Weddings11.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(11)">
-                <img src ='../img/portfolio/Weddings/Weddings12.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(12)">
-                <img src ='../img/portfolio/Weddings/Weddings13.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(13)">
-                <img src ='../img/portfolio/Weddings/Weddings14.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(14)">
-                <img src ='../img/portfolio/Weddings/Weddings15.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(15)">
-                <img src ='../img/portfolio/Weddings/Weddings16.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(16)">
-                <img src ='../img/portfolio/Weddings/Weddings17.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(17)">
-                <img src ='../img/portfolio/Weddings/Weddings18.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(18)">
-                <img src ='../img/portfolio/Weddings/Weddings19.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(19)">
-                <img src ='../img/portfolio/Weddings/Weddings20.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(20)">
-                <img src ='../img/portfolio/Weddings/Weddings21.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(21)">
-                <img src ='../img/portfolio/Weddings/Weddings22.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(22)">
-                <img src ='../img/portfolio/Weddings/Weddings23.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(23)">
-                <img src ='../img/portfolio/Weddings/Weddings24.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(24)">
-                <img src ='../img/portfolio/Weddings/Weddings25.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Whiskey-Product-Photography2.jpg' alt="" class="demo-image">
               </div>
 
           </div>
@@ -282,129 +199,19 @@
                                     /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
                                     // place commas between every element
 
-                src: '../img/portfolio/Weddings/Weddings1.jpg',
+                src: '../img/portfolio/Product/Beauty-Product-Photography.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: '../img/portfolio/Product/Whiskey-Product-Photography.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: '../img/portfolio/Product/Whiskey-Product-Photography2.jpg',
                 w: 1500,
                 h: 1000
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings3.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings4.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings5.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings6.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings7.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings8.jpg',
-                w: 1000,
-                h: 1500
-            },
-             {               
-                src: '../img/portfolio/Weddings/Weddings9.jpg',
-                w: 1000,
-                h: 1500
-            }, 
-            {               
-                src: '../img/portfolio/Weddings/Weddings10.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings11.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings12.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings13.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings14.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings15.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings16.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings17.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings18.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings19.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings20.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings21.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings22.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings23.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings24.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: '../img/portfolio/Weddings/Weddings25.jpg',
-                w: 1000,
-                h: 1500
             },
         ];
 
