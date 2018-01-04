@@ -24,8 +24,6 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-
-
     <!-- Core CSS file -->
     <link rel="stylesheet" href="gallery/photoswipe.css">
 
@@ -66,7 +64,6 @@
 
     <!--Macy.js, for masonry layout-->
     <script src="js/macy.js"></script>
-
 
 </head>
 
@@ -129,9 +126,7 @@
         </div>
     </header>
 
-
-
-        <!-- Portfolio Grid Section Photos must be 2048x1388 @96ppi-->
+    <!-- Portfolio Grid Section Photos must be 2048x1388 @96ppi-->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -142,7 +137,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Weddings"  href = "../gallery1.html" class="portfolio-link">
+                    <a id = "Weddings"  href = "masonryGalleries/weddingGallery.html" class="portfolio-link">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -156,7 +151,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Engagement/Couples" class="portfolio-link">
+                    <a id = "Engagement/Couples" class="portfolio-link" href = "masonryGalleries/engagementGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -171,7 +166,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Seniors" class="portfolio-link" >
+                    <a id = "Seniors" class="portfolio-link" href = "masonryGalleries/seniorGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -185,7 +180,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Families" class="portfolio-link">
+                    <a id = "Families" class="portfolio-link" href = "masonryGalleries/familyGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -199,7 +194,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "Pets" class="portfolio-link">
+                    <a id = "Pets" class="portfolio-link" href = "masonryGalleries/petGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -213,7 +208,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item" id = "portfolio-image">
-                    <a id = "PersonalProjects" class="portfolio-link">
+                    <a id = "PersonalProjects" class="portfolio-link" href = "masonryGalleries/personalGallery.html">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -703,6 +698,113 @@
 
 </div>
 
+<!--script for engagement/couples gallery-->
+<script>
+        var openPhotoSwipe = function() {
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+
+        // build items array
+        var items = [
+            {                 //********add images here, add the image to the images folder, then add the path to the image to the source and set the height and width 
+                                    /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
+                                    // place commas between every element
+
+                src: 'img/portfolio/Engagement/Berks-County-Engagement-Photos.jpg',
+                w: 1500,
+                h: 1000
+            },
+            {               
+                src: 'img/portfolio/Engagement/Grings-Mill-Engagement-Photos.jpg',
+                w: 1500,
+                h: 1000
+            },
+            {               
+                src: 'img/portfolio/Engagement/Reading-PA-Engagment.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Conrad-Weiser-Engagement.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Berks-County-Engagement-Photos2.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Fleetwood-Engagement-Photos.jpg',
+                w: 1500,
+                h: 1000
+            },
+            {               
+                src: 'img/portfolio/Engagement/Exeter-Engagement-Photos.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Exeter-Engagement-Photos2.jpg',
+                w: 1000,
+                h: 1500
+            },
+             {               
+                src: 'img/portfolio/Engagement/Couples-Pictures.jpg',
+                w: 1000,
+                h: 1500
+            }, 
+            {               
+                src: 'img/portfolio/Engagement/Couples-Pictures2.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Tulpehocken-Engagement-Pictures.jpg',
+                w: 1500,
+                h: 1000
+            },
+            {               
+                src: 'img/portfolio/Engagement/Reading-Rocks-Engagement.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Reading-Rocks-Engagement2.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Wyomissing-Engagement-Photos.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Shoemakersville-Engagment-Photos.jpg',
+                w: 1000,
+                h: 1500
+            },
+            {               
+                src: 'img/portfolio/Engagement/Bucks-County-Engagement-Photos.jpg',
+                w: 1000,
+                h: 1500
+            },
+        ];
+
+        // define options (if needed)
+        var options = {
+            // optionName: 'option value'
+            // for example:
+            index: 0,   // start at first slide
+            loop: true
+        };
+
+        // Initializes and opens PhotoSwipe
+        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+        gallery.init();
+    }
+        //document.getElementById('Engagement/Couples').onclick = openPhotoSwipe;
+
+</script>
 
 <!--script for seniors photo gallery. All images at 1500x1000 @96ppi --> 
 <script>
@@ -869,162 +971,9 @@
         var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     }
-        document.getElementById('Seniors').onclick = openPhotoSwipe;
+        //document.getElementById('Seniors').onclick = openPhotoSwipe;
 
 </script>
-
-<!--script for weddings gallery-->
-<script>
-        var openPhotoSwipe = function() {
-            var pswpElement = document.querySelectorAll('.pswp')[0];
-
-        // build items array
-        var items = [
-            {                 //********add images here, add the image to the images folder, then add the path to the image to the source and set the height and width 
-                                    /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
-                                    // place commas between every element
-                                    
-                src: 'img/portfolio/Weddings/Tulpehocken-Manor-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Tulpehocken-Manor-Wedding2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Goggle-Works-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Reading-PA-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Inn-At-Centre-Park-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Lancaster-Wedding-Photographer.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Lancaster-Wedding-Photographer2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Berks-County-Wedding-Photography.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Berks-County-Wedding-Photography2.jpg',
-                w: 1000,
-                h: 1500
-            },{               
-                src: 'img/portfolio/Weddings/Leesport-Wedding-Photos.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Double-Tree-Lancaster-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Blue-Marsh-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Reading-Museum-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Reading-Museum-Wedding2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Reading-Museum-Wedding3.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Loft-Landis-Creek-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Harvest-View-Barn-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Harvest-View-Barn-Wedding2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Harvest-View-Barn-Wedding3.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Goggle-Works-Wedding2.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Fleetwood-Wedding.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: 'img/portfolio/Weddings/Lancsater-Church-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Lancsater-Church-Wedding2.jpg',
-                w: 1000,
-                h: 1500
-            },{               
-                src: 'img/portfolio/Weddings/Lebanon-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-            {               
-                src: 'img/portfolio/Weddings/Myerstown-Wedding.jpg',
-                w: 1000,
-                h: 1500
-            },
-           
-        ];
-
-        // define options (if needed)
-        var options = {
-            // optionName: 'option value'
-            // for example:
-            index: 0,   // start at first slide
-            loop: true
-        };
-
-        // Initializes and opens PhotoSwipe
-        var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    }
-        document.getElementById('Weddings').onclick = openPhotoSwipe;
-
-</script>
-
 
 
 <!--script for Families gallery-->
@@ -1091,7 +1040,7 @@
         var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     }
-        document.getElementById('Families').onclick = openPhotoSwipe;
+        //document.getElementById('Families').onclick = openPhotoSwipe;
 
 </script>
 
@@ -1150,7 +1099,7 @@
         var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     }
-        document.getElementById('Pets').onclick = openPhotoSwipe;
+        //document.getElementById('Pets').onclick = openPhotoSwipe;
 
 </script>
 
@@ -1229,7 +1178,7 @@
         var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
         gallery.init();
     }
-        document.getElementById('PersonalProjects').onclick = openPhotoSwipe;
+       // document.getElementById('PersonalProjects').onclick = openPhotoSwipe;
 
 </script>
 

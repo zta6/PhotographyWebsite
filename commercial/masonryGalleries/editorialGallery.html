@@ -12,22 +12,22 @@
     <title>Brandon Adam | Berks, PA wedding, engagement, senior, pet, and family photographer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom CSS -->
-    <link href="./gallery1.css" rel="stylesheet">
+    <link href="gallery.css" rel="stylesheet">
 
         <!-- Core CSS file -->
-    <link rel="stylesheet" href="gallery/photoswipe.css">
+    <link rel="stylesheet" href="../gallery/photoswipe.css">
 
     <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
      In the folder of skin CSS file there are also:
      - .png and .svg icons sprite, 
      - preloader.gif (for browsers that do not support CSS animations) -->
-    <link rel="stylesheet" href="gallery/default-skin/default-skin.css"> 
+    <link rel="stylesheet" href="../gallery/default-skin/default-skin.css"> 
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -42,130 +42,149 @@
     <![endif]-->
     
     
-	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-  <link rel="shortcut icon" href="/img/favicon.ico">
-	<link rel="manifest" href="/manifest.json">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="manifest" href="../manifest.json">
 	<meta name="theme-color" content="#ffffff"/>
 
   <!-- jQuery -->
-  <script src="js/jquery.js"></script>
+  <script src="../js/jquery.js"></script>
 
   <!-- Bootstrap Core JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
 
   <!-- Core JS file -->
-  <script src="gallery/photoswipe.js"></script>
+  <script src="../gallery/photoswipe.js"></script>
 
   <!-- UI JS file -->
-  <script src="gallery/photoswipe-ui-default.min.js"></script> 
+  <script src="../gallery/photoswipe-ui-default.min.js"></script> 
+
+  <!--Masonry layout JS file-->
+  <script src="../js/macy.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="../js/classie.js"></script>
+  <script src="../js/cbpAnimatedHeader.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="../js/agency.js"></script>
 
 </head>
 
 <body>
+  <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <ul class="nav navbar-nav">
+          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+        </ul>
+      </div>
+    </nav>
+
     <section class="section">
       <div class="container">
-          <div id="macy-container">
+          <div id = "macy-container">
 
               <div class="demo" onclick = "openPhotoSwipe(0)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings1.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings1.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(1)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings2.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(2)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings3.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings3.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(3)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings4.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings4.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(4)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings5.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings5.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(5)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings6.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings6.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(6)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings7.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings7.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(7)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings8.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings8.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(8)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings9.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings9.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(9)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings10.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings10.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(10)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings11.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings11.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(11)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings12.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings12.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(12)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings13.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings13.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(13)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings14.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings14.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(14)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings15.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings15.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(15)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings16.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings16.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(16)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings17.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings17.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(17)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings18.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings18.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(18)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings19.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings19.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(19)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings20.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings20.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(20)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings21.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings21.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(21)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings22.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings22.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(22)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings23.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings23.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(23)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings24.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings24.jpg' alt="" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(24)">
-                <img src ='commercial/img/portfolio/Weddings/Weddings25.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Weddings/Weddings25.jpg' alt="" class="demo-image">
               </div>
 
           </div>
@@ -234,7 +253,6 @@
 
 </div>
 
-    <script src="js/macy.min.js"></script>
     <script>
       Macy({
           container: '#macy-container',
@@ -264,127 +282,127 @@
                                     /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
                                     // place commas between every element
 
-                src: 'commercial/img/portfolio/Weddings/Weddings1.jpg',
+                src: '../img/portfolio/Weddings/Weddings1.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings2.jpg',
+                src: '../img/portfolio/Weddings/Weddings2.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings3.jpg',
+                src: '../img/portfolio/Weddings/Weddings3.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings4.jpg',
+                src: '../img/portfolio/Weddings/Weddings4.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings5.jpg',
+                src: '../img/portfolio/Weddings/Weddings5.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings6.jpg',
+                src: '../img/portfolio/Weddings/Weddings6.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings7.jpg',
+                src: '../img/portfolio/Weddings/Weddings7.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings8.jpg',
+                src: '../img/portfolio/Weddings/Weddings8.jpg',
                 w: 1000,
                 h: 1500
             },
              {               
-                src: 'commercial/img/portfolio/Weddings/Weddings9.jpg',
+                src: '../img/portfolio/Weddings/Weddings9.jpg',
                 w: 1000,
                 h: 1500
             }, 
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings10.jpg',
+                src: '../img/portfolio/Weddings/Weddings10.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings11.jpg',
+                src: '../img/portfolio/Weddings/Weddings11.jpg',
                 w: 1500,
                 h: 1000
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings12.jpg',
+                src: '../img/portfolio/Weddings/Weddings12.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings13.jpg',
+                src: '../img/portfolio/Weddings/Weddings13.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings14.jpg',
+                src: '../img/portfolio/Weddings/Weddings14.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings15.jpg',
+                src: '../img/portfolio/Weddings/Weddings15.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings16.jpg',
+                src: '../img/portfolio/Weddings/Weddings16.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings17.jpg',
+                src: '../img/portfolio/Weddings/Weddings17.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings18.jpg',
+                src: '../img/portfolio/Weddings/Weddings18.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings19.jpg',
+                src: '../img/portfolio/Weddings/Weddings19.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings20.jpg',
+                src: '../img/portfolio/Weddings/Weddings20.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings21.jpg',
+                src: '../img/portfolio/Weddings/Weddings21.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings22.jpg',
+                src: '../img/portfolio/Weddings/Weddings22.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings23.jpg',
+                src: '../img/portfolio/Weddings/Weddings23.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings24.jpg',
+                src: '../img/portfolio/Weddings/Weddings24.jpg',
                 w: 1000,
                 h: 1500
             },
             {               
-                src: 'commercial/img/portfolio/Weddings/Weddings25.jpg',
+                src: '../img/portfolio/Weddings/Weddings25.jpg',
                 w: 1000,
                 h: 1500
             },

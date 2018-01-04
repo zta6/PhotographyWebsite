@@ -7,7 +7,9 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-size: 26px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup,
@@ -31,10 +33,6 @@ audio:not([controls]) {
 
 a {
     background: transparent
-}
-
-a:active, a:hover {
-    outline: 0
 }
 
 abbr[title] {
@@ -201,20 +199,6 @@ ul, ol, dd {
     box-sizing: border-box
 }
 
-body {
-    color: #4d4d4d;
-    font-family: 'Source Sans Pro', sans-serif
-}
-
-a:not(.btn), a:visited:not(.btn) {
-    color: #54b9cb;
-    text-decoration: none
-}
-
-a:not(.btn):hover, a:not(.btn):active, a:not(.btn):focus {
-    color: #4CA8B9
-}
-
 .container {
     width: 95%;
     padding: 0px;
@@ -371,6 +355,26 @@ footer {
     .btn.has-icon::before {
         display: none
     }
+}
+
+.navbar-nav > li{
+    margin-left: 2vw;
+}
+
+.navbar{
+    background-color: #222222;
+    height: 60px;
+}
+
+.navLink{
+    color:white !important;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #fed136 !important;
 }
 
 
