@@ -78,7 +78,7 @@
   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+          <li ><button class = "navLink" onclick = "goBack()"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</button></li>
         </ul>
       </div>
     </nav>
@@ -93,15 +93,15 @@
             You'll also need to add the images to the photoswipe gallery down at about line 210. Those images should be in the same order as these images-->
 
               <div class="demo" onclick = "openPhotoSwipe(0)">
-                <img src ='../img/portfolio/Product/Beauty-Product-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Beauty-Product-Photography.jpg' alt="Clearasil product photo" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(1)">
-                <img src ='../img/portfolio/Product/Whiskey-Product-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Whiskey-Product-Photography.jpg' alt="Four Roses Whiskey product photo" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(2)">
-                <img src ='../img/portfolio/Product/Whiskey-Product-Photography2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Product/Whiskey-Product-Photography2.jpg' alt="Bulleit whiskey product photo" class="demo-image">
               </div>
 
           </div>
@@ -170,6 +170,12 @@
 
 </div>
 
+  <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
+  
     <script>
       Macy({
           container: '#macy-container',
