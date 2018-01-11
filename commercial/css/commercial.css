@@ -426,7 +426,7 @@ section h3.section-subheading {
     text-align: center;
     top: 50%;
     margin-top: -12px;
-    color: white;
+    color: #222222;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
@@ -438,7 +438,7 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption {
     max-width: 400px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #222222;
     text-align: center;
     padding: 25px;
     background-color: #008fe6;
@@ -446,7 +446,7 @@ section h3.section-subheading {
 #portfolio .portfolio-item .portfolio-caption h4 {
     text-transform: none;
     margin: 0;
-    color: white;
+    color: #222222;
 }
 
 #portfolio .portfolio-item .portfolio-caption p {
