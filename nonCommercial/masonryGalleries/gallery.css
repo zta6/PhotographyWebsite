@@ -6,6 +6,13 @@ html {
     -webkit-text-size-adjust: 100%;
 }
 
+
+.text-muted {
+    color: #777777;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+
 body {
     margin: 0;
     font-size: 26px;
