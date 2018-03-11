@@ -951,3 +951,22 @@ body {
 #yellowArrows{
     color: #fec503;
 }
+
+#servicesNavbar{
+     background-color: black!important;
+     padding-bottom:10px!important;
+     padding-top:10px!important;
+}
+
+#servicesHeader{
+    margin-top: 50px;
+}
+
+#services h1,h2,h3,h4{
+    text-align: center;
+}
+
+#services a{
+    text-decoration: none;
+    color: inherit;
+}
