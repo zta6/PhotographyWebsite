@@ -314,7 +314,7 @@
 			$output .= '</ul>';
 
 			$output .= '<div id="dpsp-networks-selector-footer">';
-				$output .= '<a href="#" class="button button-primary">Apply Selection</a>';
+				$output .= '<a href="#" class="button button-primary">' . __( 'Apply Selection', 'social-pug' ) . '</a>';
 			$output .= '</div>';
 
 		$output .= '</div>';
@@ -485,7 +485,7 @@
 					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 
 				    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_391911b7881ba9ca27be83107_e8045e44a7" tabindex="-1" value=""></div>
-				    <div class="clear"><input type="submit" value="Stay Informed" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+				    <div class="clear"><input type="submit" value="<?php echo __( 'Stay Informed', 'social-pug' ); ?>" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 				    
 				</form>
 			</div>
@@ -501,7 +501,7 @@
 
 				echo '<p>' . sprintf( __( '%sOpt-In Hound%s is the easiest way for you to create beautiful popup and widget email optin forms and start growing your email subscriber lists.', 'social-pug' ), '<a href="https://devpups.com/opt-in-hound/?utm_source=plugin-sidebar&amp;utm_medium=opt-in-hound-crosspromo&amp;utm_campaign=social-pug" target="_blank">', '</a>' ) . '</p>';
 
-				echo '<a href="https://devpups.com/opt-in-hound/?utm_source=plugin-sidebar&amp;utm_medium=opt-in-hound-crosspromo&amp;utm_campaign=social-pug" target="_blank" class="button button-secondary">Learn More</a>';
+				echo '<a href="https://devpups.com/opt-in-hound/?utm_source=plugin-sidebar&amp;utm_medium=opt-in-hound-crosspromo&amp;utm_campaign=social-pug" target="_blank" class="button button-secondary">' . __( 'Learn More', 'social-pug' ) . '</a>';
 
 			echo '</div>';
 

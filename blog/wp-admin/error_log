@@ -2,3 +2,5 @@
 [10-Jan-2018 17:10:10 UTC] PHP Warning:  sprintf(): Too few arguments in /home/brandonadamphoto/public_html/blog/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
 [10-Jan-2018 17:10:24 UTC] PHP Warning:  sprintf(): Too few arguments in /home/brandonadamphoto/public_html/blog/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
 [10-Jan-2018 17:10:24 UTC] PHP Warning:  sprintf(): Too few arguments in /home/brandonadamphoto/public_html/blog/wp-admin/includes/class-bulk-upgrader-skin.php on line 150
+[16-Mar-2018 16:17:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/brandonadamphoto/public_html/blog/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk-admin.php on line 47
+[16-Mar-2018 16:17:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/brandonadamphoto/public_html/blog/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk-admin.php on line 101

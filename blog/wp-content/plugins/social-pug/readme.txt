@@ -4,7 +4,7 @@ Donate link: https://www.devpups.com/social-pug/
 Tags: social, social share, social sharing, social sharing buttons, social network, social share buttons, share buttons, share button, facebook button, pin button, share counter, social network share, floating share buttons, content share buttons, share counts, social share icon
 Requires at least: 3.1
 Tested up to: 4.9.4
-Stable tag: 1.4.1
+Stable tag: 1.4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -78,6 +78,12 @@ You can place both the inline share buttons and the floating sidebar sharing but
 
 
 == Changelog ==
+
+= 1.4.3 =
+* Fixed: Issue with Twitter opening two pop-up share windows when Twitter's script is added to the page.
+
+= 1.4.2 =
+* Misc: Added translation support for strings that were missing it.
 
 = 1.4.1 =
 * Misc: Removed Google+ social share count support, due to Google removing it also.
