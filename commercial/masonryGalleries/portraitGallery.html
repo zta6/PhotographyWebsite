@@ -78,7 +78,7 @@
   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+          <li ><button class = "navLink" onclick = "goBack()"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</button></li>
         </ul>
       </div>
     </nav>
@@ -118,6 +118,10 @@
 
               <div class="demo" onclick = "openPhotoSwipe(6)">
                 <img src ='../img/portfolio/Portrait/Skier-Commercial-Photography2.jpg' alt="" class="demo-image">
+              </div>
+              
+              <div class="demo" onclick = "openPhotoSwipe(7)">
+                <img src ='../img/portfolio/Portrait/Commercial-Headshot.jpg' alt="" class="demo-image">
               </div>
 
           </div>
@@ -186,6 +190,12 @@
 
 </div>
 
+  <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
+  
     <script>
       Macy({
           container: '#macy-container',
@@ -204,6 +214,8 @@
     </script>
 
       <!--script for engagement/couples gallery-->
+      
+      
 <script>
 
         var openPhotoSwipe = function(id) {
@@ -211,9 +223,7 @@
 
         // build items array
         var items = [
-            {                 //********add images here, add the image to the images folder, then add the path to the image to the source and set the height and width 
-                                    /// using the w and h attributes. Make sure you follow the proper formatting convention. encase each picture in curly brackets 
-                                    // place commas between every element
+            {                 
                 src: '../img/portfolio/Portrait/Commercial-Headshot-Photography.jpg',
                 w: 1000,
                 h: 1500
@@ -245,6 +255,11 @@
             },
             {               
                 src: '../img/portfolio/Portrait/Skier-Commercial-Photography2.jpg',
+                w: 1000,
+                h: 1500
+            }, 
+            {                 
+                src: '../img/portfolio/Portrait/Commercial-Headshot.jpg',
                 w: 1000,
                 h: 1500
             },

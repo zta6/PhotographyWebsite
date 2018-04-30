@@ -78,7 +78,7 @@
   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+          <li ><button class = "navLink" onclick = "goBack()"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</button></li>
         </ul>
       </div>
     </nav>
@@ -93,35 +93,35 @@
             You'll also need to add the images to the photoswipe gallery down at about line 200. Those images should be in the same order as these images-->
 
               <div class="demo" onclick = "openPhotoSwipe(0)">
-                <img src ='../img/portfolio/Outdoors/Archery-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Archery-Commercial-Photography.jpg' alt="Archer shooting in the woods" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(1)">
-                <img src ='../img/portfolio/Outdoors/Astronomy-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Astronomy-Commercial-Photography.jpg' alt="Astronmer with stars" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(2)">
-                <img src ='../img/portfolio/Outdoors/Corporate-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Corporate-Commercial-Photography.jpg' alt="Passion vs Profession" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(3)">
-                <img src ='../img/portfolio/Outdoors/Hiking-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Hiking-Commercial-Photography.jpg' alt="Hiker on mountain" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(4)">
-                <img src ='../img/portfolio/Outdoors/Kayaking-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Kayaking-Commercial-Photography.jpg' alt="Kayaker going over waterfall" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(5)">
-                <img src ='../img/portfolio/Outdoors/Rock-Climbing-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Rock-Climbing-Commercial-Photography.jpg' alt="Rock climber by the sea" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(6)">
-                <img src ='../img/portfolio/Outdoors/Rock-Climbing-Outdoors-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Rock-Climbing-Outdoors-Commercial-Photography.jpg' alt="Rock climber on cliff" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(7)">
-                <img src ='../img/portfolio/Outdoors/Kayaking-Commercial-Photography2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Outdoors/Kayaking-Commercial-Photography2.jpg' alt="Kayaker stacked image" class="demo-image">
               </div>
 
           </div>
@@ -189,6 +189,12 @@
     </div>
 
 </div>
+
+  <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
 
     <script>
       Macy({

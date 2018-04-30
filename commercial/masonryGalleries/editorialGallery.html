@@ -78,7 +78,7 @@
   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+          <li ><button class = "navLink" onclick = "goBack()"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</button></li>
         </ul>
       </div>
     </nav>
@@ -106,35 +106,31 @@
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(3)">
-                <img src ='../img/portfolio/Editorial/Couple-Editorial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Couple-Editorial-Photography.jpg' alt="Editorial Couple portrait" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(4)">
-                <img src ='../img/portfolio/Editorial/Couple-Editorial-Photography2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Couple-Editorial-Photography2.jpg' alt="Editorial couple kissing" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(5)">
-                <img src ='../img/portfolio/Editorial/Dancer-Editorial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Dancer-Editorial-Photography.jpg' alt="Dancer leaping on stage" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(6)">
-                <img src ='../img/portfolio/Editorial/Piano-Editorial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Piano-Editorial-Photography.jpg' alt="Pianist performing on stage" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(7)">
-                <img src ='../img/portfolio/Editorial/Portrait-Editorial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Portrait-Editorial-Photography.jpg' alt="Man surrounded by pipe smoke" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(8)">
-                <img src ='../img/portfolio/Editorial/Suit-Editorial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Suit-Editorial-Photography.jpg' alt="Editorial mens fashion" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(9)">
-                <img src ='../img/portfolio/Editorial/Suit-Editorial-Photography2.jpg' alt="" class="demo-image">
-              </div>
-
-              <div class="demo" onclick = "openPhotoSwipe(10)">
-                <img src ='../img/portfolio/Editorial/Suit-Editorial-Photography3.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Editorial/Suit-Editorial-Photography2.jpg' alt="Editorial mens suit" class="demo-image">
               </div>
 
           </div>
@@ -202,6 +198,12 @@
     </div>
 
 </div>
+
+  <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
 
     <script>
       Macy({
@@ -278,11 +280,6 @@
             }, 
             {               
                 src: '../img/portfolio/Editorial/Suit-Editorial-Photography2.jpg',
-                w: 1500,
-                h: 1000
-            },
-            {               
-                src: '../img/portfolio/Editorial/Suit-Editorial-Photography3.jpg',
                 w: 1500,
                 h: 1000
             },

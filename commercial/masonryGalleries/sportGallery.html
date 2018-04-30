@@ -78,7 +78,7 @@
   <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <ul class="nav navbar-nav">
-          <li ><a class = "navLink" href="../index.html"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</a></li>
+          <li ><button class = "navLink" onclick = "goBack()"><i class="fa fa-arrow-left fa-1x" aria-hidden="true"></i> BACK</button></li>
         </ul>
       </div>
     </nav>
@@ -94,47 +94,47 @@
 
 
               <div class="demo" onclick = "openPhotoSwipe(0)">
-                <img src ='../img/portfolio/Sports/Archery-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Archery-Commercial-Photography.jpg' alt="Archer at sunset" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(1)">
-                <img src ='../img/portfolio/Sports/Archery-Commercial-Photography2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Archery-Commercial-Photography2.jpg' alt="Archery editorial photography" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(2)">
-                <img src ='../img/portfolio/Sports/Athlete-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Athlete-Commercial-Photography.jpg' alt="Athlete training on feild" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(3)">
-                <img src ='../img/portfolio/Sports/Baseball-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Baseball-Commercial-Photography.jpg' alt="Baseball player on pitchers mound" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(4)">
-                <img src ='../img/portfolio/Sports/Golf-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Golf-Commercial-Photography.jpg' alt="Golfer in sand trap" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(5)">
-                <img src ='../img/portfolio/Sports/Weight-Lifting-Commercial-Photography2.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Weight-Lifting-Commercial-Photography2.jpg' alt="Woman lifting weights" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(6)">
-                <img src ='../img/portfolio/Sports/Runner-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Runner-Commercial-Photography.jpg' alt="Sprinter on starting blocks" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(7)">
-                <img src ='../img/portfolio/Sports/Soccer-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Soccer-Commercial-Photography.jpg' alt="Soccer player punting ball" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(8)">
-                <img src ='../img/portfolio/Sports/Rock-Climber-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Rock-Climber-Commercial-Photography.jpg' alt="Rock climber in climbing gym" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(9)">
-                <img src ='../img/portfolio/Sports/Training-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Training-Commercial-Photography.jpg' alt="Personal trainer" class="demo-image">
               </div>
 
               <div class="demo" onclick = "openPhotoSwipe(10)">
-                <img src ='../img/portfolio/Sports/Weight-Lifting-Commercial-Photography.jpg' alt="" class="demo-image">
+                <img src ='../img/portfolio/Sports/Weight-Lifting-Commercial-Photography.jpg' alt="Personal trainer doing squats" class="demo-image">
               </div>
 
           </div>
@@ -203,6 +203,12 @@
 
 </div>
 
+  <script>
+      function goBack() {
+          window.history.back();
+      }
+  </script>
+  
     <script>
       Macy({
           container: '#macy-container',
