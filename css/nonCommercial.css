@@ -241,7 +241,7 @@ header .container{
     font-size: 18px;
     text-indent: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;	
+    margin-left: 20px;
     margin-top: 2%;
     float: right;
 }
@@ -268,7 +268,7 @@ header{
     float: left;
     background-image: url('../img/AboutMeSquare.jpg');
     background-size: 275px 275px;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-position: center;
     height: 275px;
     width: 100%;
@@ -278,7 +278,7 @@ header{
     font-size: 18px;
     text-indent: 20px;
     margin-bottom: 10px;
-    margin-left: 0px;  
+    margin-left: 0px;
     margin-top: 2%;
 }
 
@@ -411,6 +411,12 @@ section h3.section-subheading {
     height: 140vw;
 }
 
+.youtubeVideo{
+    margin-top: 5vh;
+    width: 100%;
+    height: 30vh;
+}
+
 @media (min-width: 330px){
     .testimonials{
         width: 100%;
@@ -426,7 +432,7 @@ section h3.section-subheading {
         height: 35%;
         padding-right: 5%;
         padding-left: 5%;
-    } 
+    }
     .testimonials{
         width: 100%;
         height: 24em;
@@ -435,9 +441,17 @@ section h3.section-subheading {
     header .intro-text .intro-heading {
         margin-top: 13vw;
     }
+
+    .youtubeVideo{
+        height: 60vh;
+    }
 }
 
 @media (min-width: 768px) {
+
+    .youtubeVideo{
+        height: 70vh;
+    }
 
     .testimonials{
         width: 100%;
@@ -482,7 +496,7 @@ section h3.section-subheading {
         /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
 
     #quote-carousel .carousel-indicators {
-        bottom: 0px !important;  
+        bottom: 0px !important;
     }
     #quote-carousel .carousel-indicators li {
         display: inline-block;
@@ -502,7 +516,7 @@ section h3.section-subheading {
     .aboutImage{
         background-image: url('../img/AboutMe.jpg');
         background-size: 100% 100%;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         height: 600px;
         width: 400px;
         float: left;
@@ -515,7 +529,7 @@ section h3.section-subheading {
         font-size: 18px;
         text-indent: 20px;
         margin-bottom: 10px;
-        margin-left: 0px;  
+        margin-left: 0px;
         margin-top: 2%;
     }
     header .intro-text {
@@ -524,12 +538,12 @@ section h3.section-subheading {
     }
     header .container{
         height: 800px;
-    }   
+    }
     header .intro-text .intro-lead-in {
         font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-style: italic;
         font-size: 60px;
-        line-height: 60px;  
+        line-height: 60px;
         margin-bottom: 25px;
     }
     header .intro-text .intro-heading {
@@ -613,9 +627,9 @@ section h3.section-subheading {
     }
 
     .aboutImage{
-        background-image: url('../img/AboutMe.jpg');    
+        background-image: url('../img/AboutMe.jpg');
         background-size: 100% 100%;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         height: 650px;
         width: 433px;
         float: left;
@@ -628,11 +642,11 @@ section h3.section-subheading {
         font-size: 22px;
         text-indent: 25px;
         margin-bottom: 10px;
-        margin-left: 0px;  
+        margin-left: 0px;
         margin-top: 2%;
     }
 
-    #theKnot{   
+    #theKnot{
         height: 45%;
         width: 70%;
         margin-bottom: 5%;
@@ -666,6 +680,10 @@ section h3.section-subheading {
 }
 
 @media (min-width: 1200px) {
+
+    .youtubeVideo{
+        height: 70vh;
+    }
 
     .logoClass{
         height: 45px;
@@ -712,7 +730,7 @@ section h3.section-subheading {
     .aboutImage{
         background-image: url('../img/AboutMe.jpg');
         background-size: 100% 100%;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         height: 800px;
         width: 533px;
         float: left;
@@ -725,7 +743,7 @@ section h3.section-subheading {
         font-size: 25px;
         text-indent: 30px;
         margin-bottom: 10px;
-        margin-left: 0px;  
+        margin-left: 0px;
         margin-top: 2%;
     }
 
@@ -887,7 +905,7 @@ body {
     text-indent: 25px;
     margin-left: 25px;
     margin-right: 25px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 .section-subheading h3{
     font-size: 18px;
@@ -915,7 +933,7 @@ body {
 
 
 /* carousel */
-#quote-carousel 
+#quote-carousel
 {
     padding: 0 10px 30px 10px;
     margin-top: 30px;
@@ -931,28 +949,28 @@ body {
     margin-top: 30px;
 }
 /* Previous button  */
-#quote-carousel .carousel-control.left 
+#quote-carousel .carousel-control.left
 {
     left: -12px;
 }
 /* Next button  */
-#quote-carousel .carousel-control.right 
+#quote-carousel .carousel-control.right
 {
     right: -12px !important;
 }
 /* Changes the position of the indicators */
-#quote-carousel .carousel-indicators 
+#quote-carousel .carousel-indicators
 {
     right: 50%;
     bottom: 0px;
     margin-right: -19px;
 }
 /* Changes the color of the indicators */
-#quote-carousel .carousel-indicators li 
+#quote-carousel .carousel-indicators li
 {
     background: #c0c0c0;
 }
-#quote-carousel .carousel-indicators .active 
+#quote-carousel .carousel-indicators .active
 {
     background: #333333;
 }
@@ -964,7 +982,7 @@ body {
 /* End carousel */
 
 .item blockquote {
-    border-left: none; 
+    border-left: none;
     margin: 0;
 }
 
@@ -1040,10 +1058,14 @@ body {
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
         overflow: hidden!important;
     }
+}
+
+.videoContainer{
+    text-align: center;
 }
